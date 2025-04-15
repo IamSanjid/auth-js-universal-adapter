@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.main.json",
+  "compilerOptions": {
+    "outDir": ".",
+    "rootDir": "src",
+    "lib": ["es2022", "esnext"]
+  },
+  "exclude": ["*.js", "*.d.ts"],
+  "include": ["src/**/*"]
+}

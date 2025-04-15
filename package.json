@@ -1,0 +1,51 @@
+{
+  "name": "universal-adapter",
+  "version": "0.0.1",
+  "description": "Universal adapter for Auth.js",
+  "homepage": "https://authjs.dev",
+  "repository": "https://github.com/iamsanjid/auth-js-universal-adapter",
+  "bugs": {
+    "url": "https://github.com/nextauthjs/next-auth/issues"
+  },
+  "author": "Purple",
+  "type": "module",
+  "types": "./index.d.ts",
+  "files": [
+    "*.js",
+    "*.d.ts*",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "license": "ISC",
+  "keywords": [
+    "next-auth",
+    "next.js",
+    "oauth",
+    "adapter"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "del-cli \"src/*.js\" \"src/*.d.ts\" \"src/**/*.js\" \"src/**/*.d.ts\" \"test/*.js\" \"test/*.d.ts\" \"test/**/*.js\" \"test/**/*.d.ts\""
+  },
+  "dependencies": {
+    "@auth/core": "^0.38.0",
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "del-cli": "^6.0.0",
+    "typedoc": "^0.28.2",
+    "typedoc-plugin-markdown": "^4.6.2",
+    "typescript": "^5.8.3"
+  }
+}
